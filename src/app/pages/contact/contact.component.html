@@ -1,0 +1,13 @@
+<div class="container">
+	<form [formGroup]="formularioContacto" (ngSubmit)="enviar()">
+		<div class="mb-3">
+			<label for="name" class="form-label">Nombre</label>
+			<input class="form-control" id="name" formControlName="nombre" >
+		</div>
+		<div class="mb-3">
+			<label for="email" class="form-label">Email</label>
+			<input type="email" class="form-control" id="email" formControlName="email">
+		</div>
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+</div>
